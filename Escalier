@@ -1,0 +1,3548 @@
+Last login: Fri Jan  3 20:07:12 on ttys003
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:~ brunoboschiero$ mkdir velo
+MacBook-Pro-de-Bruno-Boschiero:~ brunoboschiero$ cd velo
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ touch index.js
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ mkdir views
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ touch page.ejs
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ mv page.ejs views/
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ ls views/
+page.ejs
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ npm init -y
+Wrote to /Users/brunoboschiero/velo/package.json:
+
+{
+  "name": "velo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ npm install body-parser cors express helmet morgan ejs
+(node:4854) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 drain listeners added to [TLSSocket]. Use emitter.setMaxListeners() to increase limit
+
+> ejs@3.0.1 postinstall /Users/brunoboschiero/velo/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN velo@1.0.0 No description
+npm WARN velo@1.0.0 No repository field.
+
++ helmet@3.21.2
++ cors@2.8.5
++ morgan@1.9.1
++ body-parser@1.19.0
++ ejs@3.0.1
++ express@4.17.1
+added 77 packages from 49 contributors and audited 192 packages in 22.581s
+found 0 vulnerabilities
+
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ npm install cookie-session
+npm WARN velo@1.0.0 No description
+npm WARN velo@1.0.0 No repository field.
+
++ cookie-session@1.3.3
+added 3 packages from 2 contributors and audited 199 packages in 8.948s
+found 0 vulnerabilities
+
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ node velo.js
+internal/modules/cjs/loader.js:775
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/brunoboschiero/velo/velo.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:772:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:677:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ node index.js
+app is listening on port 3000
+^C
+MacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ nodemon index.js
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:20
+		req.sesion.todolist.push(urlencodedParser(req.body.todo)
+		                                                       ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:20
+		req.sesion.todolist.push(urlencodedParser(req.body.todo);
+		                                                       ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:20
+		req.sesion.todolist.push(urlencodedParser(req.body.todo);
+		                                                       ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:20
+		req.session.todolist.push(urlencodedParser(req.body.todo);
+		                                                        ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:11
+app.use(session({secret:roberta69}));
+                        ^
+
+ReferenceError: roberta69 is not defined
+    at Object.<anonymous> (/Users/brunoboschiero/velo/index.js:11:25)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+todolist
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:11
+.use(function(req, res, next){
+^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'todolist' of undefined
+    at /Users/brunoboschiero/velo/index.js:12:28
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/brunoboschiero/velo/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:284:7
+TypeError: Cannot read property 'todolist' of undefined
+    at /Users/brunoboschiero/velo/index.js:12:28
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/brunoboschiero/velo/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:284:7
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:31
+        req.session.todolist.push(urlencodedParser(req.body.todo);
+                                                                ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'todo' of undefined
+    at /Users/brunoboschiero/velo/index.js:30:18
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:275:10)
+    at /Users/brunoboschiero/velo/index.js:17:5
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:37
+ => console.log('app is listening on port 3000'));
+ ^^
+
+SyntaxError: Unexpected token =>
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:35
+app.listen(3000,(){
+                 ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:36
+ => console.log('app is listening on port 3000');
+ ^^
+
+SyntaxError: Unexpected token =>
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:36
+  console.log('app is listening on port 3000');
+  ^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:37
+}
+^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:37
+}
+^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:14
+        req.session.todolist = [];
+        ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (/Users/brunoboschiero/velo/index.js:14:9)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'push' of undefined
+    at /Users/brunoboschiero/velo/index.js:31:36
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at /Users/brunoboschiero/velo/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:224:16)
+    at done (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:16
+            tache = [];
+                      ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:16
+            tache = [],
+            ^^^^^^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'push' of undefined
+    at /Users/brunoboschiero/velo/index.js:34:36
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at /Users/brunoboschiero/velo/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:224:16)
+    at done (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'push' of undefined
+    at /Users/brunoboschiero/velo/index.js:34:36
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at /Users/brunoboschiero/velo/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:224:16)
+    at done (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'push' of undefined
+    at /Users/brunoboschiero/velo/index.js:34:35
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at /Users/brunoboschiero/velo/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:224:16)
+    at done (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:20
+        var req.session.todolist = new todolist();
+               ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'push' of undefined
+    at /Users/brunoboschiero/velo/index.js:34:36
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at /Users/brunoboschiero/velo/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:224:16)
+    at done (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'push' of undefined
+    at /Users/brunoboschiero/velo/index.js:34:35
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at /Users/brunoboschiero/velo/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:224:16)
+    at done (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:15
+        var req.session.todolist = {
+               ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:13
+var req.session.todolist = ;
+       ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:13
+var req.session.todolist = 'undefined';
+       ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'push' of undefined
+    at /Users/brunoboschiero/velo/index.js:33:35
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at /Users/brunoboschiero/velo/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:224:16)
+    at done (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/brunoboschiero/velo/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:17
+         var req.session.todolist = new Object();
+                ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:17
+         var req.session.todolist = new Object();
+                ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: /Users/brunoboschiero/velo/views/page.ejs:10
+    8| 	
+    9| 	<h1>Je vous dis <%= title%></h1>
+ >> 10| 	<p>Voici la todolist : <%todolist.forEach(function (todo, id) { %>
+    11| <li><a href="/delete/<%=id%>"> ✘ </a><%= todo%> <%=limit%></li>
+    12| 
+    13| <%
+
+Cannot read property 'forEach' of undefined
+    at eval (/Users/brunoboschiero/velo/views/page.ejs:15:16)
+    at page (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:656:17)
+    at tryHandleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:459:10)
+    at View.render (/Users/brunoboschiero/velo/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/brunoboschiero/velo/node_modules/express/lib/response.js:1012:7)
+    at /Users/brunoboschiero/velo/index.js:28:6
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+TypeError: /Users/brunoboschiero/velo/views/page.ejs:10
+    8| 	
+    9| 	<h1>Je vous dis <%= title%></h1>
+ >> 10| 	<p>Voici la todolist : <%todolist.forEach(function (todo,limit, id) { %>
+    11| <li><a href="/delete/<%=id%>"> ✘ </a><%= todo%> <%=limit%></li>
+    12| 
+    13| <%
+
+Cannot read property 'forEach' of undefined
+    at eval (/Users/brunoboschiero/velo/views/page.ejs:15:16)
+    at page (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:656:17)
+    at tryHandleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:459:10)
+    at View.render (/Users/brunoboschiero/velo/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/brunoboschiero/velo/node_modules/express/lib/response.js:1012:7)
+    at /Users/brunoboschiero/velo/index.js:28:6
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:28
+	res.render('page', {title: title, req.session.todolist: req.session.todolist, limit:req.session.todolist});
+	                                     ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+SyntaxError: Unexpected token ) in /Users/brunoboschiero/velo/views/page.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:626:12)
+    at Object.compile (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:366:16)
+    at handleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:459:10)
+    at View.render (/Users/brunoboschiero/velo/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/brunoboschiero/velo/node_modules/express/lib/response.js:1012:7)
+SyntaxError: Unexpected token ) in /Users/brunoboschiero/velo/views/page.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:626:12)
+    at Object.compile (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:366:16)
+    at handleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:459:10)
+    at View.render (/Users/brunoboschiero/velo/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/brunoboschiero/velo/node_modules/express/lib/response.js:1012:7)
+SyntaxError: Unexpected token ) in /Users/brunoboschiero/velo/views/page.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:626:12)
+    at Object.compile (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:366:16)
+    at handleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:215:18)
+    at tryHandleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:254:16)
+    at View.exports.renderFile [as engine] (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:459:10)
+    at View.render (/Users/brunoboschiero/velo/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/brunoboschiero/velo/node_modules/express/lib/response.js:1012:7)
+ReferenceError: /Users/brunoboschiero/velo/views/page.ejs:11
+    9| 	<h1>Je vous dis <%= title%></h1>
+    10| 	<p>Voici la todolist : 
+ >> 11| <li><a href="/delete/<%=id%>"> ✘ </a><%= todo%> <%=limit%></li>
+    12| 
+    13| 
+    14| 		
+
+id is not defined
+    at eval (/Users/brunoboschiero/velo/views/page.ejs:15:25)
+    at page (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:656:17)
+    at tryHandleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:459:10)
+    at View.render (/Users/brunoboschiero/velo/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/brunoboschiero/velo/node_modules/express/lib/response.js:1012:7)
+    at /Users/brunoboschiero/velo/index.js:28:6
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+ReferenceError: /Users/brunoboschiero/velo/views/page.ejs:11
+    9| 	<h1>Je vous dis <%= title%></h1>
+    10| 	<p>Voici la todolist : 
+ >> 11| <li><%= todo%> <%=limit%></li>
+    12| 
+    13| 
+    14| 		
+
+todo is not defined
+    at eval (/Users/brunoboschiero/velo/views/page.ejs:15:26)
+    at page (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:656:17)
+    at tryHandleCache (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:254:36)
+    at View.exports.renderFile [as engine] (/Users/brunoboschiero/velo/node_modules/ejs/lib/ejs.js:459:10)
+    at View.render (/Users/brunoboschiero/velo/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/brunoboschiero/velo/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/brunoboschiero/velo/node_modules/express/lib/response.js:1012:7)
+    at /Users/brunoboschiero/velo/index.js:28:6
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'todot' of undefined
+    at /Users/brunoboschiero/velo/index.js:28:62
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:275:10)
+    at /Users/brunoboschiero/velo/index.js:20:5
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+TypeError: Cannot read property 'todo' of undefined
+    at /Users/brunoboschiero/velo/index.js:28:62
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/brunoboschiero/velo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/brunoboschiero/velo/node_modules/express/lib/router/index.js:275:10)
+    at /Users/brunoboschiero/velo/index.js:20:5
+    at Layer.handle [as handle_request] (/Users/brunoboschiero/velo/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:28
+	res.render('page', {title: title, todo: Object.values(req.session.todolist});
+	                                                                  ^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:28
+	res.render('page', {title: title, todo: Object.values(req.session.todolist});
+	                                                                  ^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+/Users/brunoboschiero/velo/index.js:28
+	res.render('page', {title: title, todo: var todo = Object.entries(req.session.todolist)});
+	                                        ^^^
+
+SyntaxError: Unexpected token var
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+app is listening on port 3000
+^CMacBook-Pro-de-Bruno-Boschiero:velo brunoboschiero$ cd ..
+MacBook-Pro-de-Bruno-Boschiero:.Trash brunoboschiero$ cd ..
+MacBook-Pro-de-Bruno-Boschiero:~ brunoboschiero$ cd projet
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ node server.js
+il y a une requete !
+il y a une requete !
+^C
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ node server.js
+l'app ecoute sur le port 3000
+il y a une requete !
+il y a une requete !
+^C
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ nodemon server.js
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:10
+	response.writeHead(200);
+	^
+
+ReferenceError: response is not defined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:10:2)
+    at Object.onceWrapper (events.js:297:20)
+    at Server.emit (events.js:209:13)
+    at emitListeningNT (net.js:1262:10)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:10
+	response.writeHead(200);
+	         ^
+
+TypeError: Cannot read property 'writeHead' of undefined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:10:11)
+    at Object.onceWrapper (events.js:297:20)
+    at Server.emit (events.js:209:13)
+    at emitListeningNT (net.js:1262:10)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:10
+	response.writeHead(200);
+	         ^
+
+TypeError: Cannot read property 'writeHead' of undefined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:10:11)
+    at Object.onceWrapper (events.js:297:20)
+    at Server.emit (events.js:209:13)
+    at emitListeningNT (net.js:1262:10)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] app crashed - waiting for file changes before starting...
+
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:10
+	response.writeHead(200, {
+	         ^
+
+TypeError: Cannot read property 'writeHead' of undefined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:10:11)
+    at Object.onceWrapper (events.js:297:20)
+    at Server.emit (events.js:209:13)
+    at emitListeningNT (net.js:1262:10)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:10
+	response.writeHead(200, {
+	         ^
+
+TypeError: Cannot read property 'writeHead' of undefined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:10:11)
+    at Object.onceWrapper (events.js:297:20)
+    at Server.emit (events.js:209:13)
+    at emitListeningNT (net.js:1262:10)
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:7
+		'Content-Type': 'text/html';
+		                           ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:7
+		'Content-Type': 'text/html';
+		                           ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:11
+}).server.listen(3000, () => {
+         ^
+
+TypeError: Cannot read property 'listen' of undefined
+    at Object.<anonymous> (/Users/brunoboschiero/projet/server.js:11:10)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:9
+		fs.readFile('index.html', (err, data) => {
+		  ^
+
+SyntaxError: Unexpected token .
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+/Users/brunoboschiero/projet/server.js:9
+    	if (err) throw err
+    	         ^
+
+[Error: ENOENT: no such file or directory, open 'indea.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'indea.html'
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:25
+console.log('l\'app ecoute sur le port 3000')});
+                                                
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+/Users/brunoboschiero/projet/server.js:9
+ 			console.log(url.parse(request.url));
+ 			                      ^
+
+ReferenceError: request is not defined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:9:27)
+    at Server.emit (events.js:209:13)
+    at parserOnIncoming (_http_server.js:733:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jean',
+  query: 'name=jean',
+  pathname: '/',
+  path: '/?name=jean',
+  href: '/?name=jean'
+}
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jean',
+  query: 'name=jean',
+  pathname: '/',
+  path: '/?name=jean',
+  href: '/?name=jean'
+}
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jean',
+  query: 'name=jean',
+  pathname: '/',
+  path: '/?name=jean',
+  href: '/?name=jean'
+}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jean',
+  query: 'name=jean',
+  pathname: '/',
+  path: '/?name=jean',
+  href: '/?name=jean'
+} true
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jean',
+  query: [Object: null prototype] { name: 'jean' },
+  pathname: '/',
+  path: '/?name=jean',
+  href: '/?name=jean'
+}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+/Users/brunoboschiero/projet/server.js:23
+	    	data = data.replace('{{name}}', name)
+	    	            ^
+
+TypeError: data.replace is not a function
+    at /Users/brunoboschiero/projet/server.js:23:19
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:61:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+l'app ecoute sur le port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:1
+let http = requite('http');
+           ^
+
+ReferenceError: requite is not defined
+    at Object.<anonymous> (/Users/brunoboschiero/projet/server.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:9
+			if(err) throw err;
+			        ^
+
+[Error: ENOENT: no such file or directory, open 'index'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index'
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:9
+			if (err) {throw err;}
+			          ^
+
+[Error: ENOENT: no such file or directory, open 'index'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index'
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:19
+				res.end('bonjour' +  url.parse(req.url);
+				                                      ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+bonjour[object Object]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jojo',
+  query: 'name=jojo',
+  pathname: '/',
+  path: '/?name=jojo',
+  href: '/?name=jojo'
+}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jojo',
+  query: 'name=jojo',
+  pathname: '/',
+  path: '/?name=jojo',
+  href: '/?name=jojo'
+} true
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=jojo',
+  query: [Object: null prototype] { name: 'jojo' },
+  pathname: '/',
+  path: '/?name=jojo',
+  href: '/?name=jojo'
+}
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=Sophie',
+  query: [Object: null prototype] { name: 'Sophie' },
+  pathname: '/',
+  path: '/?name=Sophie',
+  href: '/?name=Sophie'
+}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?name=Sophie',
+  query: [Object: null prototype] { name: 'Sophie' },
+  pathname: '/',
+  path: '/?name=Sophie',
+  href: '/?name=Sophie'
+}
+/Users/brunoboschiero/projet/server.js:20
+				if (query.name === undefined) {
+				          ^
+
+TypeError: Cannot read property 'name' of undefined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:20:15)
+    at Server.emit (events.js:209:13)
+    at parserOnIncoming (_http_server.js:733:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[Object: null prototype] { name: 'Sophie' }
+/Users/brunoboschiero/projet/server.js:20
+				if (query.name === undefined) {
+				          ^
+
+TypeError: Cannot read property 'name' of undefined
+    at Server.<anonymous> (/Users/brunoboschiero/projet/server.js:20:15)
+    at Server.emit (events.js:209:13)
+    at parserOnIncoming (_http_server.js:733:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:22
+					res.end(data, name:);
+					              ^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:22
+					res.end(data, name:);
+					              ^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:22
+					res.end(data, name:);
+					              ^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:22
+					res.end(data, name:);
+					              ^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:22
+					res.end(data, name:);
+					              ^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:22
+					res.end(data, name:);
+					              ^^^^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:32
+}).listen(3000);
+                
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:32
+}).listen(3000);
+                
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:32
+}.listen(3000));
+^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:6428) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+/Users/brunoboschiero/projet/server.js:32
+}).listen(3000);
+                
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:27
+				});
+				 ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:33
+}).listen(3000);
+                
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:22
+/*
+^^
+
+SyntaxError: Invalid or unexpected token
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/brunoboschiero/projet/server.js:24
+/*server.on('request',(req,res) => {
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+je saute 10 20
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+je saute 10 20
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+je saute 10 20
+^CMacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ nodemon copy.js
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node copy.js`
+/Users/brunoboschiero/projet/copy.js:21
+}
+^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node copy.js`
+J'ai lu 0%
+J'ai lu 0%
+J'ai lu 1%
+J'ai lu 1%
+J'ai lu 1%
+J'ai lu 1%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 3%
+J'ai lu 3%
+J'ai lu 3%
+J'ai lu 3%
+J'ai lu 4%
+J'ai lu 4%
+J'ai lu 4%
+J'ai lu 4%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 6%
+J'ai lu 6%
+J'ai lu 6%
+J'ai lu 6%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 8%
+J'ai lu 8%
+J'ai lu 8%
+J'ai lu 8%
+J'ai lu 9%
+J'ai lu 9%
+J'ai lu 9%
+J'ai lu 9%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 11%
+J'ai lu 11%
+J'ai lu 11%
+J'ai lu 11%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 13%
+J'ai lu 13%
+J'ai lu 13%
+J'ai lu 13%
+J'ai lu 14%
+J'ai lu 14%
+J'ai lu 14%
+J'ai lu 14%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 16%
+J'ai lu 16%
+J'ai lu 16%
+J'ai lu 16%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 18%
+J'ai lu 18%
+J'ai lu 18%
+J'ai lu 18%
+J'ai lu 19%
+J'ai lu 19%
+J'ai lu 19%
+J'ai lu 19%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 21%
+J'ai lu 21%
+J'ai lu 21%
+J'ai lu 21%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 23%
+J'ai lu 23%
+J'ai lu 23%
+J'ai lu 23%
+J'ai lu 24%
+J'ai lu 24%
+J'ai lu 24%
+J'ai lu 24%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 26%
+J'ai lu 26%
+J'ai lu 26%
+J'ai lu 26%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 28%
+J'ai lu 28%
+J'ai lu 28%
+J'ai lu 28%
+J'ai lu 29%
+J'ai lu 29%
+J'ai lu 29%
+J'ai lu 29%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 31%
+J'ai lu 31%
+J'ai lu 31%
+J'ai lu 31%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 33%
+J'ai lu 33%
+J'ai lu 33%
+J'ai lu 33%
+J'ai lu 34%
+J'ai lu 34%
+J'ai lu 34%
+J'ai lu 34%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 36%
+J'ai lu 36%
+J'ai lu 36%
+J'ai lu 36%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 38%
+J'ai lu 38%
+J'ai lu 38%
+J'ai lu 38%
+J'ai lu 39%
+J'ai lu 39%
+J'ai lu 39%
+J'ai lu 39%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 41%
+J'ai lu 41%
+J'ai lu 41%
+J'ai lu 41%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 43%
+J'ai lu 43%
+J'ai lu 43%
+J'ai lu 43%
+J'ai lu 44%
+J'ai lu 44%
+J'ai lu 44%
+J'ai lu 44%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 46%
+J'ai lu 46%
+J'ai lu 46%
+J'ai lu 46%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 48%
+J'ai lu 48%
+J'ai lu 48%
+J'ai lu 48%
+J'ai lu 49%
+J'ai lu 49%
+J'ai lu 49%
+J'ai lu 49%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 51%
+J'ai lu 51%
+J'ai lu 51%
+J'ai lu 51%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 53%
+J'ai lu 53%
+J'ai lu 53%
+J'ai lu 53%
+J'ai lu 54%
+J'ai lu 54%
+J'ai lu 54%
+J'ai lu 54%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 56%
+J'ai lu 56%
+J'ai lu 56%
+J'ai lu 56%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 58%
+J'ai lu 58%
+J'ai lu 58%
+J'ai lu 58%
+J'ai lu 59%
+J'ai lu 59%
+J'ai lu 59%
+J'ai lu 59%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 61%
+J'ai lu 61%
+J'ai lu 61%
+J'ai lu 61%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 63%
+J'ai lu 63%
+J'ai lu 63%
+J'ai lu 63%
+J'ai lu 64%
+J'ai lu 64%
+J'ai lu 64%
+J'ai lu 64%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 66%
+J'ai lu 66%
+J'ai lu 66%
+J'ai lu 66%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 68%
+J'ai lu 68%
+J'ai lu 68%
+J'ai lu 68%
+J'ai lu 69%
+J'ai lu 69%
+J'ai lu 69%
+J'ai lu 69%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 71%
+J'ai lu 71%
+J'ai lu 71%
+J'ai lu 71%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 73%
+J'ai lu 73%
+J'ai lu 73%
+J'ai lu 73%
+J'ai lu 74%
+J'ai lu 74%
+J'ai lu 74%
+J'ai lu 74%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 76%
+J'ai lu 76%
+J'ai lu 76%
+J'ai lu 76%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 78%
+J'ai lu 78%
+J'ai lu 78%
+J'ai lu 78%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 80%
+J'ai lu 80%
+J'ai lu 80%
+J'ai lu 80%
+J'ai lu 81%
+J'ai lu 81%
+J'ai lu 81%
+J'ai lu 81%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 83%
+J'ai lu 83%
+J'ai lu 83%
+J'ai lu 83%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 85%
+J'ai lu 85%
+J'ai lu 85%
+J'ai lu 85%
+J'ai lu 86%
+J'ai lu 86%
+J'ai lu 86%
+J'ai lu 86%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 88%
+J'ai lu 88%
+J'ai lu 88%
+J'ai lu 88%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 90%
+J'ai lu 90%
+J'ai lu 90%
+J'ai lu 90%
+J'ai lu 91%
+J'ai lu 91%
+J'ai lu 91%
+J'ai lu 91%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 93%
+J'ai lu 93%
+J'ai lu 93%
+J'ai lu 93%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 95%
+J'ai lu 95%
+J'ai lu 95%
+J'ai lu 95%
+J'ai lu 96%
+J'ai lu 96%
+J'ai lu 96%
+J'ai lu 96%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 98%
+J'ai lu 98%
+J'ai lu 98%
+J'ai lu 98%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 100%
+J'ai lu 100%
+J'ai lu 100%
+J'ai fini
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node copy.js`
+J'ai lu 0%
+_stream_readable.js:722
+    const ret = dest.write(chunk);
+                     ^
+
+TypeError: dest.write is not a function
+    at ReadStream.ondata (_stream_readable.js:722:22)
+    at ReadStream.emit (events.js:214:15)
+    at addChunk (_stream_readable.js:305:12)
+    at readableAddChunk (_stream_readable.js:286:11)
+    at ReadStream.Readable.push (_stream_readable.js:220:10)
+    at internal/fs/streams.js:193:12
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:478:5)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node copy.js`
+J'ai lu 0%
+_stream_readable.js:722
+    const ret = dest.write(chunk);
+                     ^
+
+TypeError: dest.write is not a function
+    at ReadStream.ondata (_stream_readable.js:722:22)
+    at ReadStream.emit (events.js:214:15)
+    at addChunk (_stream_readable.js:305:12)
+    at readableAddChunk (_stream_readable.js:286:11)
+    at ReadStream.Readable.push (_stream_readable.js:220:10)
+    at internal/fs/streams.js:193:12
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:478:5)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node copy.js`
+J'ai lu 0%
+J'ai lu 0%
+J'ai lu 1%
+J'ai lu 1%
+J'ai lu 1%
+J'ai lu 1%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 2%
+J'ai lu 3%
+J'ai lu 3%
+J'ai lu 3%
+J'ai lu 3%
+J'ai lu 4%
+J'ai lu 4%
+J'ai lu 4%
+J'ai lu 4%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 5%
+J'ai lu 6%
+J'ai lu 6%
+J'ai lu 6%
+J'ai lu 6%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 7%
+J'ai lu 8%
+J'ai lu 8%
+J'ai lu 8%
+J'ai lu 8%
+J'ai lu 9%
+J'ai lu 9%
+J'ai lu 9%
+J'ai lu 9%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 10%
+J'ai lu 11%
+J'ai lu 11%
+J'ai lu 11%
+J'ai lu 11%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 12%
+J'ai lu 13%
+J'ai lu 13%
+J'ai lu 13%
+J'ai lu 13%
+J'ai lu 14%
+J'ai lu 14%
+J'ai lu 14%
+J'ai lu 14%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 15%
+J'ai lu 16%
+J'ai lu 16%
+J'ai lu 16%
+J'ai lu 16%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 17%
+J'ai lu 18%
+J'ai lu 18%
+J'ai lu 18%
+J'ai lu 18%
+J'ai lu 19%
+J'ai lu 19%
+J'ai lu 19%
+J'ai lu 19%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 20%
+J'ai lu 21%
+J'ai lu 21%
+J'ai lu 21%
+J'ai lu 21%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 22%
+J'ai lu 23%
+J'ai lu 23%
+J'ai lu 23%
+J'ai lu 23%
+J'ai lu 24%
+J'ai lu 24%
+J'ai lu 24%
+J'ai lu 24%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 25%
+J'ai lu 26%
+J'ai lu 26%
+J'ai lu 26%
+J'ai lu 26%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 27%
+J'ai lu 28%
+J'ai lu 28%
+J'ai lu 28%
+J'ai lu 28%
+J'ai lu 29%
+J'ai lu 29%
+J'ai lu 29%
+J'ai lu 29%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 30%
+J'ai lu 31%
+J'ai lu 31%
+J'ai lu 31%
+J'ai lu 31%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 32%
+J'ai lu 33%
+J'ai lu 33%
+J'ai lu 33%
+J'ai lu 33%
+J'ai lu 34%
+J'ai lu 34%
+J'ai lu 34%
+J'ai lu 34%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 35%
+J'ai lu 36%
+J'ai lu 36%
+J'ai lu 36%
+J'ai lu 36%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 37%
+J'ai lu 38%
+J'ai lu 38%
+J'ai lu 38%
+J'ai lu 38%
+J'ai lu 39%
+J'ai lu 39%
+J'ai lu 39%
+J'ai lu 39%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 40%
+J'ai lu 41%
+J'ai lu 41%
+J'ai lu 41%
+J'ai lu 41%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 42%
+J'ai lu 43%
+J'ai lu 43%
+J'ai lu 43%
+J'ai lu 43%
+J'ai lu 44%
+J'ai lu 44%
+J'ai lu 44%
+J'ai lu 44%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 45%
+J'ai lu 46%
+J'ai lu 46%
+J'ai lu 46%
+J'ai lu 46%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 47%
+J'ai lu 48%
+J'ai lu 48%
+J'ai lu 48%
+J'ai lu 48%
+J'ai lu 49%
+J'ai lu 49%
+J'ai lu 49%
+J'ai lu 49%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 50%
+J'ai lu 51%
+J'ai lu 51%
+J'ai lu 51%
+J'ai lu 51%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 52%
+J'ai lu 53%
+J'ai lu 53%
+J'ai lu 53%
+J'ai lu 53%
+J'ai lu 54%
+J'ai lu 54%
+J'ai lu 54%
+J'ai lu 54%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 55%
+J'ai lu 56%
+J'ai lu 56%
+J'ai lu 56%
+J'ai lu 56%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 57%
+J'ai lu 58%
+J'ai lu 58%
+J'ai lu 58%
+J'ai lu 58%
+J'ai lu 59%
+J'ai lu 59%
+J'ai lu 59%
+J'ai lu 59%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 60%
+J'ai lu 61%
+J'ai lu 61%
+J'ai lu 61%
+J'ai lu 61%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 62%
+J'ai lu 63%
+J'ai lu 63%
+J'ai lu 63%
+J'ai lu 63%
+J'ai lu 64%
+J'ai lu 64%
+J'ai lu 64%
+J'ai lu 64%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 65%
+J'ai lu 66%
+J'ai lu 66%
+J'ai lu 66%
+J'ai lu 66%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 67%
+J'ai lu 68%
+J'ai lu 68%
+J'ai lu 68%
+J'ai lu 68%
+J'ai lu 69%
+J'ai lu 69%
+J'ai lu 69%
+J'ai lu 69%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 70%
+J'ai lu 71%
+J'ai lu 71%
+J'ai lu 71%
+J'ai lu 71%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 72%
+J'ai lu 73%
+J'ai lu 73%
+J'ai lu 73%
+J'ai lu 73%
+J'ai lu 74%
+J'ai lu 74%
+J'ai lu 74%
+J'ai lu 74%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 75%
+J'ai lu 76%
+J'ai lu 76%
+J'ai lu 76%
+J'ai lu 76%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 77%
+J'ai lu 78%
+J'ai lu 78%
+J'ai lu 78%
+J'ai lu 78%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 79%
+J'ai lu 80%
+J'ai lu 80%
+J'ai lu 80%
+J'ai lu 80%
+J'ai lu 81%
+J'ai lu 81%
+J'ai lu 81%
+J'ai lu 81%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 82%
+J'ai lu 83%
+J'ai lu 83%
+J'ai lu 83%
+J'ai lu 83%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 84%
+J'ai lu 85%
+J'ai lu 85%
+J'ai lu 85%
+J'ai lu 85%
+J'ai lu 86%
+J'ai lu 86%
+J'ai lu 86%
+J'ai lu 86%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 87%
+J'ai lu 88%
+J'ai lu 88%
+J'ai lu 88%
+J'ai lu 88%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 89%
+J'ai lu 90%
+J'ai lu 90%
+J'ai lu 90%
+J'ai lu 90%
+J'ai lu 91%
+J'ai lu 91%
+J'ai lu 91%
+J'ai lu 91%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 92%
+J'ai lu 93%
+J'ai lu 93%
+J'ai lu 93%
+J'ai lu 93%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 94%
+J'ai lu 95%
+J'ai lu 95%
+J'ai lu 95%
+J'ai lu 95%
+J'ai lu 96%
+J'ai lu 96%
+J'ai lu 96%
+J'ai lu 96%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 97%
+J'ai lu 98%
+J'ai lu 98%
+J'ai lu 98%
+J'ai lu 98%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 99%
+J'ai lu 100%
+J'ai lu 100%
+J'ai lu 100%
+Le fichier a bien ete copie !
+[nodemon] clean exit - waiting for changes before restart
+
+  [Restauré]
+Last login: Tue Jan  7 14:16:21 on console
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+  [Restauré]
+Last login: Fri Jan 10 10:19:53 on console
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+  [Restauré]
+Last login: Fri Jan 10 12:03:14 on ttys000
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+  [Restauré]
+Last login: Mon Jan 13 10:13:34 on console
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ chmod 
+usage:	chmod [-fhv] [-R [-H | -L | -P]] [-a | +a | =a  [i][# [ n]]] mode|entry file ...
+	chmod [-fhv] [-R [-H | -L | -P]] [-E | -C | -N | -i | -I] file ...
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+  [Restauré]
+Last login: Tue Jan 14 08:47:58 on ttys000
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+  [Restauré]
+Last login: Fri Jan 17 08:19:39 on console
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+  [Restauré]
+Last login: Sat Jan 18 13:33:05 on console
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ 
+  [Restauré]
+Last login: Sun Jan 19 20:13:06 on console
+You have new mail.
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ clear
+
+MacBook-Pro-de-Bruno-Boschiero:projet brunoboschiero$ cd ..
+MacBook-Pro-de-Bruno-Boschiero:~ brunoboschiero$ mkdir epreuves
+MacBook-Pro-de-Bruno-Boschiero:~ brunoboschiero$ cd epreuves
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ touch escaliers
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ rm escaliers
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ ls
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ ls -l
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ touch escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ ls -l
+total 0
+-rw-r--r--  1 brunoboschiero  staff  0 19 jan 20:26 escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ ./escaliers 4
+-bash: ./escaliers: No such file or directory
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ escaliers.js
+-bash: escaliers.js: command not found
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$  node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:3
+for(i=1,i<=n,i++) {
+                ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ clear
+
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 4
+/Users/brunoboschiero/epreuves/escaliers.js:3
+for(i=1,i<=n,i++) {
+                ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 4
+/Users/brunoboschiero/epreuves/escaliers.js:3
+for(i=1,i<=n,i++) {
+                ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 4
+/Users/brunoboschiero/epreuves/escaliers.js:3
+		for (i=1,i<=n,i++ {
+		                  ^
+
+SyntaxError: Unexpected token {
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+coucou
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+for(i=0,i<5,i++) {
+               ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+for(i=0,i<5,i++){
+               ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+for(let i=0,i<5,i++){
+            ^
+
+SyntaxError: Identifier 'i' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+#0
+#1
+#2
+#3
+#4
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+NaN
+NaN
+NaN
+NaN
+NaN
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+NaN
+NaN
+NaN
+NaN
+NaN
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+NaN
+NaN
+NaN
+NaN
+NaN
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+#
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+1
+NaN
+NaN
+NaN
+NaN
+NaN
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ escaliers
+-bash: escaliers: command not found
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 3
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+2
+NaN
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+function factorial (n) {
+                   ^
+
+RangeError: Maximum call stack size exceeded
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:1:20)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+function factorial (n) {
+                   ^
+
+RangeError: Maximum call stack size exceeded
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:1:20)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+function factorial (n) {
+                   ^
+
+RangeError: Maximum call stack size exceeded
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:1:20)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+function factorial (n) {
+                   ^
+
+RangeError: Maximum call stack size exceeded
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:1:20)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+function factorial (n) {
+                   ^
+
+RangeError: Maximum call stack size exceeded
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:1:20)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+    at factorial (/Users/brunoboschiero/epreuves/escaliers.js:6:21)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers
+/Users/brunoboschiero/epreuves/escaliers.js:1
+function (n) {
+^^^^^^^^
+
+SyntaxError: Function statements require a function name
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 2
+/Users/brunoboschiero/epreuves/escaliers.js:1
+function (n) {
+^^^^^^^^
+
+SyntaxError: Function statements require a function name
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 2
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers ecrire(2)
+-bash: syntax error near unexpected token `('
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 2
+/Users/brunoboschiero/epreuves/escaliers.js:2
+	console.log(n);
+	            ^
+
+ReferenceError: n is not defined
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers 2
+
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ ruby escalier.rb
+coucou
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ ruby escalier.rb 3
+Traceback (most recent call last):
+escalier.rb:1:in `<main>': undefined local variable or method `n' for main:Object (NameError)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ clear
+
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ echo '#'
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ for n in [number]
+> do
+> echo n * '#'
+> done
+n escalier.rb escaliers.js #
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:1
+	function(arg){
+	^^^^^^^^
+
+SyntaxError: Function statements require a function name
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:12
+dises(4);
+^
+
+ReferenceError: dises is not defined
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:12:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+#
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js dieses(4)
+-bash: syntax error near unexpected token `('
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js dieses4
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+#
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:1
+	function dieses(arg){
+	               ^
+
+RangeError: Maximum call stack size exceeded
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:1:17)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:5)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:1
+	function dieses(arg){
+	               ^
+
+RangeError: Maximum call stack size exceeded
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:1:17)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+    at dieses (/Users/brunoboschiero/epreuves/escaliers.js:4:12)
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ 
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+4
+4
+4
+4
+4
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ function convertToF(celsius) {
+-bash: syntax error near unexpected token `celsius'
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$   let fahrenheit= (celsius * 9/5)+12;
+-bash: syntax error near unexpected token `('
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$   return fahrenheit;
+-bash: return: fahrenheit: numeric argument required
+-bash: return: can only `return' from a function or sourced script
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ }
+-bash: syntax error near unexpected token `}'
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ 
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ convertToF(-0);
+-bash: syntax error near unexpected token `-0'
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ clear
+
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js convertToF(0)
+-bash: syntax error near unexpected token `('
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+12
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+[ '#' ]
+[ '#', '#' ]
+[ '#', '#', '#' ]
+[ '#', '#', '#', '#' ]
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+[ '#' ]
+[ '#', '#' ]
+[ '#', '#', '#' ]
+[ '#', '#', '#', '#' ]
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:1
+var result = #;
+             ^
+
+SyntaxError: Invalid or unexpected token
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:1
+var result = #;
+             ^
+
+SyntaxError: Invalid or unexpected token
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+NaN
+NaN
+NaN
+NaN
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+# 
+#  
+#   
+#    
+#     
+#      
+#       
+#        
+#         
+#          
+#           
+#            
+#             
+#              
+#               
+#                
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:1
+var result = "#;
+             ^^^
+
+SyntaxError: Invalid or unexpected token
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+#
+#
+#
+#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+ #
+ #
+ #
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+0#
+0#
+0#
+0#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:7
+		console.log( $i* " " + result);
+		             ^
+
+ReferenceError: $i is not defined
+    at escalier (/Users/brunoboschiero/epreuves/escaliers.js:7:16)
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:13:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:6
+		result.repeat(n);
+		       ^
+
+TypeError: result.repeat is not a function
+    at escalier (/Users/brunoboschiero/epreuves/escaliers.js:6:10)
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:13:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:7
+		console.log(" " + toString(result);
+		                                 ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:7
+		console.log(" " + result.toString();
+		                                  ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+ #,#
+ #,#,#
+ #,#,#,#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+ #,#
+ #,#,#
+ #,#,#,#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:7
+		console.log(" " + result.toString().pop(','));
+		                                    ^
+
+TypeError: result.toString(...).pop is not a function
+    at escalier (/Users/brunoboschiero/epreuves/escaliers.js:7:39)
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:13:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+ #,#
+ #,#,#
+ #,#,#,#
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+ # #
+ # # #
+ # # # #
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+ ##
+ ###
+ ####
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+  
+   
+    
+#
+     
+      
+       
+        
+##
+         
+          
+           
+            
+###
+             
+              
+               
+                
+####
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:17
+	console.log(space.concat(result);
+	                               ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+  
+   
+    
+#
+     
+      
+       
+        
+##
+         
+          
+           
+            
+###
+             
+              
+               
+                
+####
+[
+  ' ', ' ', ' ', ' ', ' ',
+  ' ', ' ', ' ', ' ', ' ',
+  ' ', ' ', ' ', ' ', ' ',
+  ' ', '#', '#', '#', '#'
+]
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+#
+  
+##
+   
+###
+    
+####
+[
+  ' ', ' ', ' ',
+  ' ', '#', '#',
+  '#', '#'
+]
+     
+#####
+      
+######
+       
+#######
+        
+########
+[
+  ' ', ' ', ' ', ' ',
+  ' ', ' ', ' ', ' ',
+  '#', '#', '#', '#',
+  '#', '#', '#', '#'
+]
+         
+#########
+          
+##########
+           
+###########
+            
+############
+[
+  ' ', ' ', ' ', ' ', ' ',
+  ' ', ' ', ' ', ' ', ' ',
+  ' ', ' ', '#', '#', '#',
+  '#', '#', '#', '#', '#',
+  '#', '#', '#', '#'
+]
+             
+#############
+              
+##############
+               
+###############
+                
+################
+[
+  ' ', ' ', ' ', ' ', ' ', ' ',
+  ' ', ' ', ' ', ' ', ' ', ' ',
+  ' ', ' ', ' ', ' ', '#', '#',
+  '#', '#', '#', '#', '#', '#',
+  '#', '#', '#', '#', '#', '#',
+  '#', '#'
+]
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+#
+[ ' ', '#' ]
+  
+##
+[ ' ', ' ', '#', '#' ]
+   
+###
+[ ' ', ' ', ' ', '#', '#', '#' ]
+    
+####
+[
+  ' ', ' ', ' ',
+  ' ', '#', '#',
+  '#', '#'
+]
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+/Users/brunoboschiero/epreuves/escaliers.js:9
+		console.log(space.join(''));
+		                  ^
+
+TypeError: space.join is not a function
+    at escalier (/Users/brunoboschiero/epreuves/escaliers.js:9:21)
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:17:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+/Users/brunoboschiero/epreuves/escaliers.js:11
+		console.log(result.join(''));
+		                   ^
+
+TypeError: result.join is not a function
+    at escalier (/Users/brunoboschiero/epreuves/escaliers.js:11:22)
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:17:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+#
+[ ' ', '#' ]
+  
+/Users/brunoboschiero/epreuves/escaliers.js:10
+		result.push("#");
+		       ^
+
+TypeError: Cannot read property 'push' of undefined
+    at escalier (/Users/brunoboschiero/epreuves/escaliers.js:10:10)
+    at Object.<anonymous> (/Users/brunoboschiero/epreuves/escaliers.js:17:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ 
+#
+[ ' ', '#' ]
+  
+##
+[ ' ', ' ', '#', '#' ]
+   
+###
+[ ' ', ' ', ' ', '#', '#', '#' ]
+    
+####
+[
+  ' ', ' ', ' ',
+  ' ', '#', '#',
+  '#', '#'
+]
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+[ ' ', '#' ]
+[ ' ', ' ', '#', '#' ]
+[ ' ', ' ', ' ', '#', '#', '#' ]
+[
+  ' ', ' ', ' ',
+  ' ', '#', '#',
+  '#', '#'
+]
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escaliers.js
+ #
+  ##
+   ###
+    ####
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ clear
+
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escalier
+ #
+  ##
+   ###
+    ####
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escalier 6
+ #
+  ##
+   ###
+    ####
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ escalier(6)
+-bash: syntax error near unexpected token `6'
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ clear
+
+
+
+
+
+
+
+
+
+
+
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ escalier
+-bash: escalier: command not found
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ node escalier
+ #
+  ##
+   ###
+    ####
+MacBook-Pro-de-Bruno-Boschiero:epreuves brunoboschiero$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
