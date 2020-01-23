@@ -3,6 +3,9 @@ var entree =process.argv.slice(2)[0];
 
 
 function factorielle(n) {
+	if(n==0){
+		return 1;
+	}
 	result=1;
 
 for (var i = 1; i <= n; i++) {
