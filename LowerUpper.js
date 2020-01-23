@@ -1,17 +1,22 @@
-var str=process.argv.slice(2)[0];
+var str=process.argv.slice(2)[0]; //recuperer l'argument
 
-var lstr = str.toLowerCase();
+var str2 = str.toLowerCase();//on met tout en lower
+var lstr = str2.replace(/ /g,'--')		// on remplace chaque espace par deux caracteres (--)
+// comme ca les espace n'influenront pas sur les index de tableau ( si pair ou impair)
+var arraystr = lstr.split('');
+var strUppLow= "";
 
-var arrayLstr = lstr.split('');
-
-
-
-for (var i = 0; i < arrayLstr.length; i++) {
+for (var i = 0; i < arraystr.length; i++) {
+	lettre = lstr[i];
+				
+			 if(i%2==0){
+			strUppLow += lettre.toLowerCase();
+		}
+			else{
+			strUppLow += lettre.toUpperCase();
+		}
+		
 	
-	if (i%2) {
-		console.log(arrayLstr[i].toUpperCase());
-	}
-	else {
-		console.log(arrayLstr[i].toLowerCase());
-	}
 }
+
+console.log(strUppLow.replace(/--/g,' '));//on remet les espaces initiaux

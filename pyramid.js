@@ -23,4 +23,4 @@ function pyramid (n){
 
 }
 
-pyramid(4);
+pyramid(11);

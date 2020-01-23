@@ -1,3 +1,7 @@
+
+const n = parseInt(process.argv.slice(2));
+
+
 function escalier(n) { //Input or number of rows
    for (var i = 1; i <= n; i++) { //pour chaque ligne
      var str = "";//initialise la chaine de caractere de sortie
@@ -7,4 +11,4 @@ function escalier(n) { //Input or number of rows
      console.log(str);
     }
 }
-escalier(90);
+escalier(n)
