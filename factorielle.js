@@ -11,7 +11,7 @@ function factorielle(n) {
 for (var i = 1; i <= n; i++) {
 	result*= i;
 }
-console.log(result);
+return (result);
 }
 
-factorielle(n);
+console.log(factorielle(n));

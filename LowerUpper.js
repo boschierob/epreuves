@@ -21,9 +21,9 @@ for (var i = 0; i < arraystr.length; i++) {
 		
 }
 
-console.log(strUppLow.replace(/--/g,' '));//on remet les espaces initiaux
+return strUppLow.replace(/--/g,' ');//on remet les espaces initiaux
 
 }
 
-upperAndLower(str);
+console.log(upperAndLower(str));
 
