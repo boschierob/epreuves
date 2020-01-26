@@ -5,7 +5,14 @@ const c2 = fs.readFileSync("./"+process.argv[3],"utf8");
 	
 	//compter le nombre de cellule par ligne
 	//compter le nombre de ligne(a l'aide du nombre de retours a la ligne
-	
+	const c1b = function (c1){
+		for (var i = 0; i < c1.length; i++) {
+			lecture =c1[i];
+			return lecture;
+		}
+
+
+	}
 
 function searchCarre(c1,c2){
 	//enleve les Retours a la Ligne (RaL) sur c2
