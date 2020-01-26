@@ -21,39 +21,71 @@ function searchCarre(c1,c2){
 		let c2b = c2.replace(/\n/g,'');//(replace() en global avec expression reguliere)
 		//console.log(c2b);
 
-		
+		var ttl=c2b.length;
+		console.log('ttl = '+ttl)
 		var nb_lines =  arr.length+1;
-		//console.log(nb_lines);
-
+		console.log('l : '+nb_lines)
+		var nb_col=(ttl/nb_lines);
+		console.log('col : '+nb_col)
 		//initialise position du terme recherche
 		//position absolue dans la chaine
 		var position = 0;
+
+
 			
-
 		for (var i = 0; i < c2b.length; i++) {
-			if(c1[0]==c2b[i]){
-				if(c1[1]==c2b[i+1]) {
-					if(c1[2]==c2b[i+2]){
+			for (var j = 0; j < c1.length; j++) {
+				
+					if(c2b[i] == c1[j]) {
+						if (c2b[i+1]==c1[j+1]) {
+							if(c2b[i+2]==c1[j+2]){
 
-						position =i;
-						//position /nb de ligne
-					var position_x = position/nb_lines ;
-						
 
-						//calculer nb de colonnes(vertical)
-						//le nombre de caracteres / nombre de lignes
-						var nb_col=(c2b.length/nb_lines);
-						var position_y = (Math.floor(position/nb_col));
-						
-						return position_x+','+position_y; 
+							position =i;
+							console.log('i = '+i)
+							//position /nb de ligne
+							var position_x;
 
+								if(nb_col<position){
+									 position_x = i%nb_col;
+
+								}
+								else if(nb_col>position){
+									position_x = position;
+
+								}
+							
+							//calculer nb de colonnes(vertical)
+							//le nombre de caracteres / nombre de lignes
+							
+							var position_y = (Math.ceil(position/nb_col)-1);//des qu'on depasse le nombre entier, nous sommes a la ligne du dessus
+							//indice commence a 0 donc on retire 1.
+							
+							return position_x+','+position_y; 
+
+
+
+							}
+						}
 					}
-				}
-			} 
-		}
 
 
-	}	
+
+
+
+
+
+							
+							
+					
+			
+						
+
+				
+			}
+		} 
+			
+}	
  
  console.log(searchCarre(c1,c2));
 
