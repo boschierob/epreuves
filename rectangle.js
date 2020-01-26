@@ -45,21 +45,31 @@ function searchCarre(c1,c2){
 							console.log('i = '+i)
 							//position /nb de ligne
 							var position_x;
+							var position_y;
 
 								if(nb_col<position){
-									 position_x = i%nb_col;
-
+									 position_x = position%nb_col;
+  
 								}
 								else if(nb_col>position){
-									position_x = position;
+									position_x = position%nb_lines;
 
 								}
 							
 							//calculer nb de colonnes(vertical)
 							//le nombre de caracteres / nombre de lignes
+							if (nb_col<position) {
+
+								position_y = Math.floor(position/nb_col);
+							}
+
 							
-							var position_y = (Math.ceil(position/nb_col)-1);//des qu'on depasse le nombre entier, nous sommes a la ligne du dessus
+							else{
+								position_y = 0;//des qu'on depasse le nombre entier, nous sommes a la ligne du dessus
 							//indice commence a 0 donc on retire 1.
+
+							}
+							
 							
 							return position_x+','+position_y; 
 
